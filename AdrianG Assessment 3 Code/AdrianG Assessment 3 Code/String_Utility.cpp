@@ -437,7 +437,7 @@ void String::SuccessRate() {
 
 	ofstream log;
 	log.open("logfile.txt", ios_base::app);
-	log << "\n" << success_r << "\n";
+	log << "\n" << success_r << "\n\n";
 	log.close();
 
 	cout << counter;
