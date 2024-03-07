@@ -40,10 +40,12 @@ public:		// functions
 	void operator += (const char* str);
 
 	void WriteTime();
+	void SuccessRate();
 
 private:	// variables
 
 	int Index;
+	int counter;
 	unsigned int size = 0;
 	char* holder = nullptr;
 	char* holder_1 = nullptr;

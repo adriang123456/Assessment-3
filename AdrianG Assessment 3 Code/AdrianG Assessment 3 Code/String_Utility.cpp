@@ -43,7 +43,18 @@ int String::Length() {
 
 
 	if (length == 11) {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "Test 1 Check Length of String - Successful";
+		log.close();
 
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "Test 1 Check Length of String - Failure";
+		log.close();
 	}
 
 	return length;
@@ -58,6 +69,21 @@ char String::CharacterAt(int index)
 	cout << CharAt;
 	cout << "\n\n\n\n";
 
+	if (CharAt == holder[2]) {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 2 Check Character of String at index 2 - Successful";
+		log.close();
+
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 2 Check Character of String at index 2 - Failure";
+		log.close();
+	}
+
 	return CharAt;
 }
 
@@ -68,6 +94,21 @@ bool String::StrEqualTo(const char* other)
 	else { cout << "False"; }
 
 	cout << "\n\n\n\n";
+
+	if (strcmp(holder, other) == 0) {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 3 Check String is Equal to 'Hello World' - Successful";
+		log.close();
+
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 3 Check String is Equal to 'Hello World' - Failure";
+		log.close();
+	}
 
 	return this;
 }
@@ -381,4 +422,23 @@ void String::WriteTime()
 	ctime_s(buf, sizeof(buf), &tt);
 
 	cout << buf;
+
+	ofstream log;
+	log.open("logfile.txt", ios_base::app);
+	log << "\n" << buf;
+	log.close();
+}
+
+void String::SuccessRate() {
+	string success_r = "";
+	if (counter == 1) { success_r = "Success Rate 25.00%"; }
+	else if (counter == 2) { success_r = "Success Rate 50.00%"; }
+	else if (counter == 3) { success_r = "Success Rate 75.00%"; }
+
+	ofstream log;
+	log.open("logfile.txt", ios_base::app);
+	log << "\n" << success_r << "\n";
+	log.close();
+
+	cout << counter;
 }

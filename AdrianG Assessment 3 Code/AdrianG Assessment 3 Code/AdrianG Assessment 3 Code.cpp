@@ -78,7 +78,17 @@ int main() {
 	//Test->operator< ("z");    // expected result --- True
 	//cout << "\n\n\n\n";
 
+	// Assessment 3 code 
+	// Gets the time and writes it into the txt file
+	Test->WriteTime();
 
+	// Tries the Functions and if they meet the expected result increases success counter
+	Test->Length();
+	Test->CharacterAt(2);
+	Test->StrEqualTo("Hello World");
+	
+	// writes the success rate based on the counter 
+	Test->SuccessRate();
 	// Deletes the class created
 	delete Test;
 	Test = nullptr;
