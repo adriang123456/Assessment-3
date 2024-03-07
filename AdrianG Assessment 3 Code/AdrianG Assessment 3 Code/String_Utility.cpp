@@ -5,6 +5,8 @@
 #include <vector>
 #include <sstream>
 #include <cstring>
+#include <ctime>
+#include <chrono>
 
 #include "string.h"
 
@@ -38,6 +40,11 @@ int String::Length() {
 	size_t length = strlen(holder);
 	cout << length;
 	cout << "\n\n\n\n";
+
+
+	if (length == 11) {
+
+	}
 
 	return length;
 }
@@ -365,4 +372,13 @@ bool String::operator<(const char* str) const
 	return false;
 }
 
+void String::WriteTime()
+{
+	auto current_time = chrono::system_clock::now();
+	time_t tt = chrono::system_clock::to_time_t(current_time);
 
+	char buf[30];
+	ctime_s(buf, sizeof(buf), &tt);
+
+	cout << buf;
+}

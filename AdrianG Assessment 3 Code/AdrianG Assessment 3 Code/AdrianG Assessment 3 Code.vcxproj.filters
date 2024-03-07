@@ -18,5 +18,13 @@
     <ClCompile Include="AdrianG Assessment 3 Code.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="String_Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="String_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
