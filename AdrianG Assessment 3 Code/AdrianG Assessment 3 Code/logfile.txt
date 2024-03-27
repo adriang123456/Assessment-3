@@ -1,1 +1,75 @@
 Start Of Log
+
+
+
+Wed Mar 27 20:38:49 2024
+Test 1 Check Length of String - Successful
+Test 2 Check Character of String at index 2 - Successful
+Test 3 Check String is Equal to 'Hello World' - Successful
+Test 4 Check Appended Stringto 'Hello World look' - Successful
+Test 5 Check Prepended String to 'World Hello World' - Successful
+Success Rate 100.00%
+
+
+Wed Mar 27 20:39:14 2024
+Test 1 Check Length of String - Successful
+Test 2 Check Character of String at index 2 - Failure
+Test 3 Check String is Equal to 'Hello World' - Successful
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended String to 'World Hello World' - Successful
+Success Rate 60.00%
+
+
+Wed Mar 27 20:39:47 2024
+Test 1 Check Length of String - Successful
+Test 2 Check Character of String at index 2 - Failure
+Test 3 Check String is Equal to 'Hello World' - Failure
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended Stringto 'World Hello World' - Failure
+Success Rate 20.00%
+
+
+Wed Mar 27 20:40:18 2024
+Test 1 Check Length of String - Successful
+Test 2 Check Character of String at index 2 - Successful
+Test 3 Check String is Equal to 'Hello World' - Successful
+Test 4 Check Appended Stringto 'Hello World look' - Successful
+Test 5 Check Prepended String to 'World Hello World' - Successful
+Success Rate 100.00%
+
+
+Wed Mar 27 20:40:46 2024
+Test 1 Check Length of String - Failure
+Test 2 Check Character of String at index 2 - Successful
+Test 3 Check String is Equal to 'Hello World' - Failure
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended Stringto 'World Hello World' - Failure
+Success Rate 20.00%
+
+
+Wed Mar 27 20:41:12 2024
+Test 1 Check Length of String - Failure
+Test 2 Check Character of String at index 2 - Successful
+Test 3 Check String is Equal to 'Hello World' - Failure
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended Stringto 'World Hello World' - Failure
+Success Rate 20.00%
+
+
+Wed Mar 27 20:41:34 2024
+Test 1 Check Length of String - Failure
+Test 2 Check Character of String at index 2 - Failure
+Test 3 Check String is Equal to 'Hello World' - Failure
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended Stringto 'World Hello World' - Failure
+Success Rate 00.00%
+
+
+Wed Mar 27 20:43:20 2024
+Test 1 Check Length of String - Failure
+Test 2 Check Character of String at index 2 - Failure
+Test 3 Check String is Equal to 'Hello World' - Failure
+Test 4 Check Appended of String to 'Hello World look' - Failure
+Test 5 Check Prepended Stringto 'World Hello World' - Failure
+Success Rate 00.00%
+

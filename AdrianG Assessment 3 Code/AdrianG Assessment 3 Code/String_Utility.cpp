@@ -119,6 +119,22 @@ void String::StrAppend(const char* other)
 	string appended = holder;
 	appended.append(other);
 
+	if (appended == "Hello World look") {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 4 Check Appended Stringto 'Hello World look' - Successful";
+		log.close();
+
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 4 Check Appended of String to 'Hello World look' - Failure";
+		log.close();
+	}
+
+
 	cout << appended;
 	cout << "\n\n\n\n";
 }
@@ -128,6 +144,21 @@ void String::StrPreppend(const char* str)
 {
 	string prepended = str;
 	prepended.append(holder);
+
+	if (prepended == "World Hello World") {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 5 Check Prepended String to 'World Hello World' - Successful";
+		log.close();
+
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "\n" << "Test 5 Check Prepended Stringto 'World Hello World' - Failure";
+		log.close();
+	}
 
 	cout << prepended;
 	cout << "\n\n\n\n";
@@ -150,6 +181,21 @@ void String::ToLower(const char* str)
 	strcpy_s(holder, str);
 	for (int i = 0; i < strlen(holder); i++) {
 		holder[i] = tolower(holder[i]);
+	}
+
+	if (holder == "hello world") {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "Test 1 Check Length of String - Successful";
+		log.close();
+
+		counter += 1;
+	}
+	else {
+		ofstream log;
+		log.open("logfile.txt", ios_base::app);
+		log << "Test 1 Check Length of String - Failure";
+		log.close();
 	}
 
 	cout << holder;
@@ -413,6 +459,7 @@ bool String::operator<(const char* str) const
 	return false;
 }
 
+// Function to get the time and write it into the txt file
 void String::WriteTime()
 {
 	auto current_time = chrono::system_clock::now();
@@ -429,11 +476,15 @@ void String::WriteTime()
 	log.close();
 }
 
+// Function to check the success rate of the tests
 void String::SuccessRate() {
 	string success_r = "";
-	if (counter == 1) { success_r = "Success Rate 25.00%"; }
-	else if (counter == 2) { success_r = "Success Rate 50.00%"; }
-	else if (counter == 3) { success_r = "Success Rate 75.00%"; }
+	if (counter == 1) { success_r = "Success Rate 20.00%"; }
+	else if (counter == 2) { success_r = "Success Rate 40.00%"; }
+	else if (counter == 3) { success_r = "Success Rate 60.00%"; }
+	else if (counter == 4) { success_r = "Success Rate 80.00%"; }
+	else if (counter == 5) { success_r = "Success Rate 100.00%"; }
+	else if (counter == 0) { success_r = "Success Rate 00.00%"; }
 
 	ofstream log;
 	log.open("logfile.txt", ios_base::app);

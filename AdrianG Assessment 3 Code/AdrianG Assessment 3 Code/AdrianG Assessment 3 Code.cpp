@@ -86,6 +86,8 @@ int main() {
 	Test->Length();
 	Test->CharacterAt(2);
 	Test->StrEqualTo("Hello World");
+	Test->StrAppend(" look");
+	Test->StrPreppend("World ");
 	
 	// writes the success rate based on the counter 
 	Test->SuccessRate();
