@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AdrianG Assessment 3 Code.cpp">
+    <ClCompile Include="AdrianG Assessment 3 Code Ver.2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="String_Utility.cpp">
+    <ClCompile Include="String.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="String_Utility.h">
+    <ClInclude Include="String.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

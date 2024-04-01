@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "String_Utility.h"
+#include "String.h"
 
 using namespace std;
 
@@ -13,8 +13,6 @@ int main() {
 
 	// making the class
 	String* Test = new String("Hello World");
-	String* Test_1(Test);
-
 
 
 	//// Testing that the functions work for Assessment 2, just requires uncommmenting
@@ -88,9 +86,10 @@ int main() {
 	Test->StrEqualTo("Hello World");
 	Test->StrAppend(" look");
 	Test->StrPreppend("World ");
-	
+
 	// writes the success rate based on the counter 
 	Test->SuccessRate();
+
 	// Deletes the class created
 	delete Test;
 	Test = nullptr;
